@@ -1,0 +1,13 @@
+/* form input {
+  border: 2px solid gray;
+  padding: 10px;
+} */
+
+.task {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+.task:focus {
+  border: 2px solid gray;
+}
