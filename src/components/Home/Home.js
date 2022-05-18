@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import MyTasks from "../MyTasks/MyTasks";
 import "./Home.css";
 const Home = () => {
   const handleTask = async (event) => {
@@ -13,24 +14,27 @@ const Home = () => {
     event.target.reset();
   };
   return (
-    <form
-      className=" flex flex-col items-center justify-center"
-      onSubmit={handleTask}
-    >
-      <input type="text" name="task" placeholder="Task" className="task" />
-      <br />
-      <textarea
-        name="description"
-        className="task"
-        placeholder="Task Description"
-        cols="20"
-        rows="5"
-      ></textarea>
-      <br />
-      <button className="btn btn-primary">
-        <input type="submit" value="Submit" />
-      </button>
-    </form>
+    <div className="text-center">
+      <form
+        className=" flex flex-col items-center justify-center"
+        onSubmit={handleTask}
+      >
+        <input type="text" name="task" placeholder="Task" className="task" />
+        <br />
+        <textarea
+          name="description"
+          className="task"
+          placeholder="Task Description"
+          cols="20"
+          rows="5"
+        ></textarea>
+        <br />
+        <button className="btn btn-primary">
+          <input type="submit" value="Add" />
+        </button>
+      </form>
+      <MyTasks></MyTasks>
+    </div>
   );
 };
 

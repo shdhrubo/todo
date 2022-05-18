@@ -23,14 +23,14 @@ const Header = () => {
                 />
               </svg>
             </label>
-            <ul
+            {/* <ul
               tabIndex="0"
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li className="text-xl">
                 <Link to={"/tasks"}>My Tasks</Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <Link className="btn btn-ghost normal-case text-xl" to={"/"}>
             ToDo
@@ -38,9 +38,9 @@ const Header = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
-            <li className="text-xl ">
+            {/* <li className="text-xl ">
               <Link to={"/tasks"}>My Tasks</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="navbar-end"></div>
